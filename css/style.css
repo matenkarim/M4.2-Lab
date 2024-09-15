@@ -1,4 +1,147 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+/* General */
+html, body {
+  height: 100%;
+  margin: 0; 
+}
+
+body {
+  display: flex;
+  flex-direction: column; 
+  color: black;
+  font-family: Arial, sans-serif;
+  background-color: grey; 
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0 5px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+/* Header */
+
+header {
+  background-color: rgb(85, 185, 64);
+  color: rgb(32, 32, 32);
+  padding: 1em 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header-inner h1 {
+  flex: 1;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgb(43, 43, 43);
+}
+
+.header-inner img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #3cff0091;
+  color: black;
+  text-align: center;
+  padding: 1em 0;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  font-size: 30px;
+  display: inline;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Main */
+
+main {
+  background-color: rgb(85, 185, 64);
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main h2 {
+  color: black;
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Article */
+
+article {
+  background-color: #3cff0091;
+  width: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
+/* Side Bar */
+
+aside {
+  background-color: #3cff0091;
+  width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+  
+}
+
+aside img {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(85, 185, 64);
+  padding: 1em 0;
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+footer p {
+  padding: 0 10px;
+}
+
+/* Link */
+a:hover {
+  color: rgb(0, 217, 255);
+  text-decoration: none;
 }
